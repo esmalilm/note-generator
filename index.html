@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Note Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Note Generator</h1>
+  <form id="noteForm">
+    <label>Acc#:
+      <input type="text" name="acc" />
+    </label>
+    <br />
+    <label>Case:
+      <input type="text" name="caseId" />
+    </label>
+    <br />
+    <label>Affected Domain:
+      <input type="text" name="domain" />
+    </label>
+    <br />
+    <label>Issue:
+      <textarea name="issue"></textarea>
+    </label>
+    <br />
+    <label>Steps Taken:
+      <textarea name="steps"></textarea>
+    </label>
+    <br />
+    <button type="button" id="generateBtn">Generate Note</button>
+  </form>
+
+  <h2>Generated Note</h2>
+  <pre id="output"></pre>
+  <button id="copyBtn">Copy to Clipboard</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
